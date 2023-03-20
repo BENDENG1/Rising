@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+
+        app:showAsAction="always"
+        android:id="@+id/bottombar_home"
+        android:title="home"
+        android:icon="@drawable/bottombar_home" />
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/bottombar_shorts"
+        android:title="shorts"
+        android:icon="@drawable/bottombar_shorts" />
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/bottombar_add"
+        android:title="add"
+        android:icon="@drawable/bottombar_add"/>
+    <item
+        app:showAsAction="always"
+        android:id="@+id/bottombar_subscribe"
+        android:title="subscribe"
+        android:icon="@drawable/bottombar_subscribe"/>
+    <item
+        app:showAsAction="always"
+        android:id="@+id/bottombar_keep"
+        android:title="keep"
+        android:icon="@drawable/bottombar_keep"/>
+
+
+</menu>

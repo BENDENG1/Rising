@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_LongClick"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#78000000"
+    tools:context=".FriendsParts.LongClickFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_ReviseFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="40dp"
+        android:background="#535353"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_FriendsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_AddFavorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_FriendsName"
+            android:background="@android:color/transparent"
+            android:text="즐겨찾기에 추가"
+            android:textAlignment="textStart" />
+
+        <Button
+            android:id="@+id/btn_ChangeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_AddFavorite"
+            android:background="@android:color/transparent"
+            android:text="이름 변경"
+            android:textAlignment="textStart" />
+
+        <Button
+            android:id="@+id/btn_Hide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_ChangeName"
+            android:background="@android:color/transparent"
+            android:text="숨김"
+            android:textAlignment="textStart" />
+
+        <Button
+            android:id="@+id/btn_Remove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_Hide"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/transparent"
+            android:text="차단"
+            android:textAlignment="textStart" />
+    </RelativeLayout>
+</FrameLayout>

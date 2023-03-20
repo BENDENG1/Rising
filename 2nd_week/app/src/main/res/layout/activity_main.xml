@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f0f0f"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/bn_fragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bnv_Main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        >
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewLogo"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        app:srcCompat="@drawable/toolbar_logo" />
+
+                    <ImageView
+                        android:id="@+id/imageViewProfile"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        app:srcCompat="@drawable/toolbar_profile" />
+
+                    <ImageView
+                        android:id="@+id/imageViewSearch"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toLeftOf="@id/imageViewProfile"
+                        app:srcCompat="@drawable/toolbar_search" />
+
+                    <ImageView
+                        android:id="@+id/imageViewNotification"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toLeftOf="@id/imageViewSearch"
+                        app:srcCompat="@drawable/toolbar_notification" />
+
+                    <ImageView
+                        android:id="@+id/imageViewConnect"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toLeftOf="@id/imageViewNotification"
+                        app:srcCompat="@drawable/toolbar_connect" />
+
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imageButtonLeftMenu"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/round_leftmenu"
+
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/toolbar_leftmenu"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <View
+
+                            android:layout_width="2dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="#434343" />
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_clickmenu"
+                            android:text="전체"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/button12"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_clickmenu"
+                            android:text="게임"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/button13"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_clickmenu"
+                            android:text="농구"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/button14"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_clickmenu"
+                            android:text="뉴스"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/button15"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_clickmenu"
+                            android:text="음악"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_clickmenu"
+                            android:text="믹스"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_clickmenu"
+                            android:text="요리 프로그램"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/button3"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_clickmenu"
+                            android:text="피트니스"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="70dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        app:srcCompat="@drawable/home_shortslogo" />
+
+                </RelativeLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageButton
+                                android:id="@+id/imageButtonShorts1"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_leftmenu"
+                                android:backgroundTint="#151515"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/shortspigeonpicture"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/textView2"
+                                android:layout_alignLeft="@id/imageButtonShorts1"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toLeftOf="@id/imageButton"
+                                android:text="명동 걸어다니는데 비둘기 씻고있는 영상 진짜 어지럽다.. \n (11.21)"
+                                android:textColor="#FFFFFF"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_alignLeft="@id/imageButtonShorts1"
+                                android:layout_alignBottom="@id/imageButtonShorts1"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="조회수  123회"
+                                android:textColor="#FFFFFF"
+                                android:textSize="10sp" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/imageButtonShorts1"
+                                android:background="#151515"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/shortscapture1"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <ImageButton
+                                android:id="@+id/imageButton2"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@id/imageButton"
+                                android:background="#151515"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/shortscapture2"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <ImageButton
+                                android:id="@+id/imageButtonShorts2"
+                                android:layout_width="150dp"
+                                android:layout_height="match_parent"
+                                android:layout_toRightOf="@id/imageButton2"
+                                android:layout_weight="1"
+                                android:backgroundTint="#151515"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/shortspigeonpicture"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#4E4E4E"
+                    app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <!--            <FrameLayout-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content" >-->
+
+
+                <!--                <ImageButton-->
+                <!--                    android:text="안녕하세요"-->
+                <!--                    android:id="@+id/imageButtonShorts10"-->
+                <!--                    android:layout_width="150dp"-->
+                <!--                    android:layout_height="200dp"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:backgroundTint="#151515"-->
+                <!--                    android:scaleType="fitXY"-->
+                <!--                    app:srcCompat="@drawable/shortspigeonpicture"-->
+                <!--                    tools:ignore="SpeakableTextPresentCheck"-->
+                <!--                    />-->
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:text="15년이 넘도록 제어하지 \n 못하고 있는 비둘기...\n  조회수  123만회"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:layout_gravity="bottom|left"/>-->
+
+                <!--            </FrameLayout>-->
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageVideosecret"
+                        android:layout_width="match_parent"
+                        android:layout_height="243dp"
+                        app:srcCompat="@drawable/videosecret" />
+
+                    <ImageView
+                        android:id="@+id/imageProfileSecret"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/imageVideosecret"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:baselineAlignBottom="false"
+                        app:srcCompat="@drawable/profilesecret" />
+
+                    <TextView
+                        android:id="@+id/textViewSecretTtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageVideosecret"
+                        android:layout_alignParentBottom="false"
+                        android:layout_toRightOf="@id/imageProfileSecret"
+                        android:text="홍어 삭히지 않아도 맛있습니다"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textViewSecretName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textViewSecretTtitle"
+                        android:layout_alignParentBottom="false"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageProfileSecret"
+                        android:text="비밀이야 bimriya 조회수 6.4만회 1개월 전"
+                        android:textColor="#B1B1B1"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/menuicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageVideosecret"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="false"
+                        app:srcCompat="@drawable/menuicon" />
+
+                    <ImageView
+                        android:id="@+id/imageViewVideoTreno"
+                        android:layout_width="match_parent"
+                        android:layout_height="244dp"
+                        android:layout_below="@id/imageProfileSecret"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:srcCompat="@drawable/videotrenolab" />
+
+                    <ImageView
+                        android:id="@+id/imageViewProfileTreno"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/imageViewVideoTreno"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/profiletrenolab" />
+
+                    <TextView
+                        android:id="@+id/textViewTrenoTitle"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageViewVideoTreno"
+                        android:layout_toRightOf="@id/imageViewProfileTreno"
+                        android:text="자영업자들의 한숨, 애플페이 때문에? 삼성페이와 어떤 차이가 있나요? 숨겨진 이 돈때문에?"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textViewTrenoName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textViewTrenoTitle"
+                        android:layout_toRightOf="@id/imageViewProfileTreno"
+                        android:text="트렌드연구소 조회수 1.5천회 8시간 전"
+                        android:textColor="#C8C8C8"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageViewVideoTreno"
+                        android:layout_alignParentRight="true"
+                        app:srcCompat="@drawable/menuicon" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#4E4E4E"
+        app:layout_constraintBottom_toTopOf="@+id/bnv_Main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnv_Main"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#0E0E0E"
+        app:itemIconSize="35dp"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

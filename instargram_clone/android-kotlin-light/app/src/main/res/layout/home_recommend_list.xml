@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/home_recommend_white_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_home_recommend_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            app:layout_constraintStart_toEndOf="@+id/civ_home_recommend"
+            app:layout_constraintTop_toTopOf="@+id/civ_home_recommend"
+            app:srcCompat="@drawable/ic_recommend_friend_close" />
+
+        <TextView
+            android:id="@+id/tv_home_recommend_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="회원님을 위한 추천"
+            app:layout_constraintEnd_toEndOf="@+id/tv_home_recommend_name"
+            app:layout_constraintStart_toStartOf="@+id/tv_home_recommend_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_home_recommend_name" />
+
+        <TextView
+            android:id="@+id/tv_home_recommend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="11dp"
+            android:text="이름"
+            app:layout_constraintEnd_toEndOf="@+id/tv_home_recommend_nickname"
+            app:layout_constraintStart_toStartOf="@+id/tv_home_recommend_nickname"
+            app:layout_constraintTop_toBottomOf="@+id/tv_home_recommend_nickname" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_home_recommend"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="70dp"
+            android:src="@drawable/ic_profile_picture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_home_recommend_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/follow_border_blue_rectangle"
+            android:text="팔로우"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tv_home_recommend_string"
+            app:layout_constraintStart_toStartOf="@+id/tv_home_recommend_string"
+            app:layout_constraintTop_toBottomOf="@+id/tv_home_recommend_string" />
+
+        <TextView
+            android:id="@+id/tv_home_recommend_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="26dp"
+            android:text="아이디"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/civ_home_recommend"
+            app:layout_constraintStart_toStartOf="@+id/civ_home_recommend"
+            app:layout_constraintTop_toBottomOf="@+id/civ_home_recommend" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

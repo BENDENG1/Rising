@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/btn_orderFinish_close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cart_close" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="주문 결과"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider25"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider25"
+        app:srcCompat="@drawable/ic_order_finish_done" />
+
+    <View
+        android:id="@+id/divider26"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@color/brighter_gray"
+        android:gravity="center"
+        android:text="주문상품"
+        android:textColor="@color/edittext_gray"
+        app:layout_constraintStart_toStartOf="@+id/divider26"
+        app:layout_constraintTop_toBottomOf="@+id/divider26" />
+
+    <TextView
+        android:id="@+id/tv_orderFinish_productName"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:text="주문상품"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/divider26"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView39"
+        app:layout_constraintTop_toTopOf="@+id/textView39" />
+
+    <View
+        android:id="@+id/divider29"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_orderFinish_productName" />
+
+    <TextView
+        android:id="@+id/tv_orderFinish_address"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:text="주소1 + 주소2"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/divider26"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView39"
+        app:layout_constraintTop_toBottomOf="@+id/divider29" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@color/brighter_gray"
+        android:gravity="center"
+        android:text="배송지"
+        android:textColor="@color/edittext_gray"
+        app:layout_constraintStart_toStartOf="@+id/divider29"
+        app:layout_constraintTop_toBottomOf="@+id/divider29" />
+
+    <View
+        android:id="@+id/divider31"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_orderFinish_address" />
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@color/brighter_gray"
+        android:gravity="center"
+        android:text="결제 금액"
+        android:textColor="@color/edittext_gray"
+        app:layout_constraintStart_toStartOf="@+id/divider31"
+        app:layout_constraintTop_toBottomOf="@+id/divider31" />
+
+    <TextView
+        android:id="@+id/tv_orderFinish_price"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:text="금액"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/divider26"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView39"
+        app:layout_constraintTop_toBottomOf="@+id/divider31" />
+
+    <View
+        android:id="@+id/divider32"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_orderFinish_price" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:text="우리은행"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/divider26"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView39"
+        app:layout_constraintTop_toBottomOf="@+id/divider32" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@color/brighter_gray"
+        android:gravity="center"
+        android:text="은행명"
+        android:textColor="@color/edittext_gray"
+        app:layout_constraintStart_toStartOf="@+id/divider32"
+        app:layout_constraintTop_toBottomOf="@+id/divider32" />
+
+    <View
+        android:id="@+id/divider33"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView78" />
+
+    <TextView
+        android:id="@+id/textView80"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/brighter_gray"
+        android:gravity="center"
+        android:text="예금주"
+        android:textColor="@color/edittext_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider33" />
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:text="근육"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView80"
+        app:layout_constraintTop_toBottomOf="@+id/divider33" />
+
+    <View
+        android:id="@+id/divider34"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/brighter_gray"
+        android:gravity="center"
+        android:text="계좌번호"
+        android:textColor="@color/edittext_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider34" />
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:text="@string/order_finish_bank_account"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textView81"
+        app:layout_constraintTop_toBottomOf="@+id/divider34" />
+
+    <View
+        android:id="@+id/divider35"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+    <TextView
+        android:id="@+id/textView83"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/brighter_gray"
+        android:gravity="center"
+        android:text="입금금액"
+        android:textColor="@color/edittext_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider35" />
+
+    <TextView
+        android:id="@+id/tv_orderFinish_price2"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:text="금액"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView83"
+        app:layout_constraintTop_toBottomOf="@+id/divider35" />
+
+    <View
+        android:id="@+id/divider36"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_orderFinish_price2" />
+
+    <TextView
+        android:id="@+id/textView85"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/brighter_gray"
+        android:gravity="center"
+        android:text="입금기한"
+        android:textColor="@color/edittext_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider36" />
+
+    <TextView
+        android:id="@+id/textView86"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:text="2023-01-13 12:00까지"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView85"
+        app:layout_constraintTop_toBottomOf="@+id/divider36" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView86"
+        app:srcCompat="@drawable/ic_home_event_1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/skyblue_rectangle"
+        android:text="주문현황 보기"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_orderFinish_shopping" />
+
+    <Button
+        android:id="@+id/btn_orderFinish_shopping"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/purchase_bgwhite_borderskyblue"
+        android:text="쇼핑 계속하기"
+        android:textColor="@color/skyblue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="복사"
+        android:textColor="@color/skyblue"
+        app:layout_constraintBottom_toBottomOf="@+id/textView82"
+        app:layout_constraintStart_toEndOf="@+id/textView82"
+        app:layout_constraintTop_toTopOf="@+id/textView82" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

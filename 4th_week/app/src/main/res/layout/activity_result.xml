@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".ResultActivity">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Again"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Again"
+        app:layout_constraintStart_toStartOf="@+id/btn_Again"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/timesup"
+        app:lottie_url="REPLACE_JSON_URL" />
+
+    <Button
+        android:id="@+id/btn_Again"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/icon_color"
+        android:text="Restart"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Home"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Home"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_Home" />
+
+    <Button
+        android:id="@+id/btn_Home"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/icon_color"
+        android:text="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ranking"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toStartOf="@+id/animationView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_RankingFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="1st"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tv_RankingSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="2nd"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_RankingFirst"
+        app:layout_constraintStart_toStartOf="@+id/tv_RankingFirst"
+        app:layout_constraintTop_toBottomOf="@+id/tv_RankingFirst" />
+
+    <TextView
+        android:id="@+id/tv_RankingThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="3rd"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_RankingSecond"
+        app:layout_constraintStart_toStartOf="@+id/tv_RankingSecond"
+        app:layout_constraintTop_toBottomOf="@+id/tv_RankingSecond" />
+
+    <TextView
+        android:id="@+id/tv_RankingFourth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="4th"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_RankingThird"
+        app:layout_constraintStart_toStartOf="@+id/tv_RankingThird"
+        app:layout_constraintTop_toBottomOf="@+id/tv_RankingThird" />
+
+    <TextView
+        android:id="@+id/tv_RankingFifth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="5th"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_RankingFourth"
+        app:layout_constraintStart_toStartOf="@+id/tv_RankingFourth"
+        app:layout_constraintTop_toBottomOf="@+id/tv_RankingFourth" />
+
+    <TextView
+        android:id="@+id/tv_FirstScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_RankingFirst"
+        app:layout_constraintStart_toEndOf="@+id/tv_RankingFirst"
+        app:layout_constraintTop_toTopOf="@+id/tv_RankingFirst" />
+
+    <TextView
+        android:id="@+id/tv_SecondScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_RankingSecond"
+        app:layout_constraintEnd_toEndOf="@+id/tv_FirstScore"
+        app:layout_constraintStart_toStartOf="@+id/tv_FirstScore"
+        app:layout_constraintTop_toBottomOf="@+id/tv_FirstScore" />
+
+    <TextView
+        android:id="@+id/tv_ThirdScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_RankingThird"
+        app:layout_constraintStart_toStartOf="@+id/tv_SecondScore"
+        app:layout_constraintTop_toBottomOf="@+id/tv_SecondScore" />
+
+    <TextView
+        android:id="@+id/tv_FourthScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_RankingFourth"
+        app:layout_constraintStart_toStartOf="@+id/tv_ThirdScore"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ThirdScore" />
+
+    <TextView
+        android:id="@+id/tv_FifthScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_RankingFifth"
+        app:layout_constraintStart_toEndOf="@+id/tv_RankingFifth"
+        app:layout_constraintStart_toStartOf="@+id/tv_FourthScore"
+        app:layout_constraintTop_toBottomOf="@+id/tv_FourthScore" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

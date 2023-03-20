@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_detail_reviewList_profile"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_bnv_mypage" />
+
+    <TextView
+        android:id="@+id/tv_detail_reviewList_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="닉네임"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/rb_detail_reviewList_star"
+        app:layout_constraintStart_toEndOf="@+id/iv_detail_reviewList_profile"
+        app:layout_constraintTop_toTopOf="@+id/iv_detail_reviewList_profile" />
+
+    <RatingBar
+        android:id="@+id/rb_detail_reviewList_star"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:focusableInTouchMode="false"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:progressTint="@color/skyblue"
+        android:rating="0"
+        android:stepSize="50"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_detail_reviewList_profile"
+        app:layout_constraintStart_toStartOf="@+id/tv_detail_reviewList_nickname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_reviewList_nickname" />
+
+    <TextView
+        android:id="@+id/tv_detail_reviewList_createdAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="날짜"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rb_detail_reviewList_star"
+        app:layout_constraintStart_toEndOf="@+id/rb_detail_reviewList_star"
+        app:layout_constraintTop_toTopOf="@+id/rb_detail_reviewList_star" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="· 오늘의집 구매"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_detail_reviewList_createdAt"
+        app:layout_constraintStart_toEndOf="@+id/tv_detail_reviewList_createdAt"
+        app:layout_constraintTop_toTopOf="@+id/tv_detail_reviewList_createdAt" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="신고"
+        android:textColor="@color/brighter_gray"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toTopOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/tv_detail_reviewList_productName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:text="구매한 상품 이름"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/iv_detail_reviewList_profile"
+        app:layout_constraintTop_toBottomOf="@+id/iv_detail_reviewList_profile" />
+
+    <ImageView
+        android:id="@+id/iv_detail_reviewList_productPicture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@+id/tv_detail_reviewList_productName"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detail_reviewList_productName"
+        app:srcCompat="@drawable/aaaaa" />
+
+    <TextView
+        android:id="@+id/tv_detail_reviewList_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="리뷰명"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_detail_reviewList_productName"
+        app:layout_constraintTop_toBottomOf="@+id/iv_detail_reviewList_productPicture" />
+</androidx.constraintlayout.widget.ConstraintLayout>

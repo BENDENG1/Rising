@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_search_hospital_result"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_search_hospital_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="병원명"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_search_hospital_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="영업시간"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_search_hospital_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_search_hospital_name" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="0.5dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_search_hospital_open"
+        app:layout_constraintStart_toEndOf="@+id/tv_search_hospital_open"
+        app:layout_constraintTop_toTopOf="@+id/tv_search_hospital_open" />
+
+    <TextView
+        android:id="@+id/tv_search_hospital_sector"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="업종"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_search_hospital_open"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider6"
+        app:layout_constraintTop_toBottomOf="@+id/tv_search_hospital_name"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/iv_search_hospital_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/tv_search_hospital_open"
+        app:layout_constraintTop_toBottomOf="@+id/tv_search_hospital_open"
+        app:srcCompat="@drawable/ic_search_hospital_distance" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="0.5dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_search_hospital_distance"
+        app:layout_constraintStart_toEndOf="@+id/iv_search_hospital_distance"
+        app:layout_constraintTop_toTopOf="@+id/iv_search_hospital_distance" />
+
+    <TextView
+        android:id="@+id/tv_search_hospital_Address"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="위치"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_search_hospital_distance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider7"
+        app:layout_constraintTop_toTopOf="@+id/iv_search_hospital_distance" />
+
+    <TextView
+        android:id="@+id/tv_search_hospital_significant1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/search_hospital_gray_rectangle"
+        android:text="전문의"
+        android:textColor="@color/search_hospital_gray_text"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/iv_search_hospital_distance"
+        app:layout_constraintTop_toBottomOf="@+id/iv_search_hospital_distance" />
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="20dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_search_hospital_reservation" />
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_search_hospital_significant1" />
+
+    <TextView
+        android:id="@+id/tv_search_hospital_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/search_hospital_black_rectangle"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:text="실시간"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_search_hospital_reservation"
+        app:layout_constraintEnd_toStartOf="@+id/tv_search_hospital_reservation"
+        app:layout_constraintTop_toTopOf="@+id/tv_search_hospital_reservation" />
+
+    <TextView
+        android:id="@+id/tv_search_hospital_reservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/search_hospital_reservation_can"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

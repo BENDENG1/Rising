@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_product_thumbnail"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            app:srcCompat="@drawable/aaaaa" />
+
+        <ImageView
+            android:id="@+id/iv_products_scrap"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/ic_scrap_off" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_products_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/shopping_product_company"
+        android:textSize="@dimen/shopping_product_company"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="@string/shopping_product_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/shopping_product_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_products_company"
+        app:layout_constraintTop_toBottomOf="@+id/tv_products_company" />
+
+    <TextView
+        android:id="@+id/tv_product_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shopping_product_discount"
+        android:textColor="@color/edittext_skyBlue"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_product_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_product_name" />
+
+    <TextView
+        android:id="@+id/tv_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="@string/shopping_product_price"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_product_discount"
+        app:layout_constraintStart_toEndOf="@+id/tv_product_discount"
+        app:layout_constraintTop_toTopOf="@+id/tv_product_discount" />
+
+    <TextView
+        android:id="@+id/tv_product_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_shopping_product_star"
+        android:text="@string/shopping_product_star"
+        android:textColor="@color/black"
+        android:textSize="@dimen/shopping_product_starreview"
+        app:layout_constraintStart_toStartOf="@+id/tv_product_discount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_product_discount" />
+
+    <TextView
+        android:id="@+id/tv_product_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/shopping_product_review"
+        android:textSize="@dimen/shopping_product_starreview"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_product_star"
+        app:layout_constraintStart_toEndOf="@+id/tv_product_star"
+        app:layout_constraintTop_toTopOf="@+id/tv_product_star" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tv_product_star"
+        app:layout_constraintTop_toBottomOf="@+id/tv_product_star"
+        app:srcCompat="@drawable/iv_shopping_product_delievery" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

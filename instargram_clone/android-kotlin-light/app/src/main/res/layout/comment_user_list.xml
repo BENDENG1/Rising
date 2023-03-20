@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/ibtn_comment_user_profile"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_profile_picture" />
+
+    <TextView
+        android:id="@+id/tv_comment_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="유저 아이디"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ibtn_comment_user_profile"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_comment_user_profile" />
+
+    <TextView
+        android:id="@+id/tv_comment_user_created"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="댓글단시기"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_comment_user_id"
+        app:layout_constraintTop_toTopOf="@+id/tv_comment_user_id" />
+
+    <TextView
+        android:id="@+id/tv_comment_user_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:text="여기는 유저가 댓글을 남기는 곳 \n유저가 이렇게 댓글을 남기는것을 api를통해 받아와야한다\n 서버분들 힘내서 빨리 해주세욥~!"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn_comment_user_like"
+        app:layout_constraintStart_toStartOf="@+id/tv_comment_user_id"
+        app:layout_constraintTop_toBottomOf="@+id/tv_comment_user_id" />
+
+    <TextView
+        android:id="@+id/tv_comment_user_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="답글 달기"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_comment_user_comment"
+        app:layout_constraintTop_toBottomOf="@+id/tv_comment_user_comment" />
+
+    <View
+        android:id="@+id/divider_comment_user_reply"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="@+id/tv_comment_user_reply"
+        app:layout_constraintStart_toStartOf="@+id/tv_comment_user_reply"
+        app:layout_constraintTop_toBottomOf="@+id/tv_comment_user_reply" />
+
+    <TextView
+        android:id="@+id/tv_comment_user_replyCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="댓글 갯수"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/divider_comment_user_reply"
+        app:layout_constraintStart_toEndOf="@+id/divider_comment_user_reply"
+        app:layout_constraintTop_toTopOf="@+id/divider_comment_user_reply" />
+
+    <ImageButton
+        android:id="@+id/ibtn_comment_user_like"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_comment_user_comment"
+        app:layout_constraintTop_toTopOf="@+id/tv_comment_user_comment"
+        app:srcCompat="@drawable/ic_comment_user_heartoff" />
+
+    <TextView
+        android:id="@+id/tv_comment_user_likeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_comment_user_like"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_comment_user_like"
+        app:layout_constraintTop_toBottomOf="@+id/ibtn_comment_user_like" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_comment_bigComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_comment_user_replyCount" />
+</androidx.constraintlayout.widget.ConstraintLayout>

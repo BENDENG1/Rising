@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">SoftSquared Android Kotlin Template</string>
+
+    <!-- Naming Rules -->
+    <!-- 도메인명_컴포넌트함축어_용도(=목적) -->
+
+    <!-- Common -->
+
+    <!--Login -->
+    <string name="login_tv_korean">한국어</string>
+    <string name="login_edt_id">사용자 이름, 이메일 주소 또는 휴대폰번호</string>
+    <string name="login_edt_password">비밀번호</string>
+    <string name="login_btn_login">로그인</string>
+    <string name="login_tv_forget">비밀번호를 잊으셨나요?</string>
+    <string name="login_btn_newAccount">새 계정 만들기</string>
+
+    <!--Join-->
+    <string name="join_btn_next">다음</string>
+    <string name="join_tv_alreadyAccount">이미 계정이 있으신가요?</string>
+        <!--email-->
+    <string name="join_tv_emailTitle"><b>이메일 주소 입력</b></string>
+    <string name="join_tv_emailSubTitle">회원님에게 연락할 수 있는 이메일 주소를 입력하세요. 이 이메일 주소는 프로필에서 다른 사람에게 공개되지 않습니다.</string>
+    <string name="join_edt_emailAddress">이메일 주소</string>
+    <string name="join_btn_phoneNumber">휴대폰 번호로 가입</string>
+        <!--certificate-->
+    <string name="join_tv_certificateTitle"><b>인증 코드 입력</b></string>
+    <string name="join_tv_certificateSubTitle">계정을 확인하려면 입력 이메일 주소로 전송된 6자리 코드를 입력하세요.</string>
+    <string name="join_edt_certificateCode">인증 코드</string>
+    <string name="join_btn_certificate_notReceive">코드를 받지 못했습니다</string>
+        <!--name-->
+    <string name="join_tv_name_Title"><b>닉네임 입력</b></string>
+    <string name="join_edt_name">닉네임</string>
+        <!--password-->
+    <string name="join_tv_password_title"><b>6자 이상의 문자 또는 숫자로\n비밀번호 만들기</b></string>
+    <string name="join_tv_password_subTitle">다른 사람이 추측할 수 없는 6자 이상의 문자와 숫자 조합으로 비밀번호를 만드세요.</string>
+    <string name="join_edt_password">비밀번호</string>
+        <!--login_Store -->
+    <string name="join_tv_store_title"><b>로그인 정보를 저장하시겠어요?</b></string>
+        <!-- birth -->
+    <string name="join_tv_birth_title"><b>생년월일 입력</b></string>
+    <string name="join_tv_birth_subTitle">비즈니스, 반려동물 또는 기타 목적으로 이 계정을 만드는 경우에도 회원님의 실제 생년월일을 사용하세요. 이 생년월일 정보는 프로필에서 다른 사람에게 공개되지 않습니다.</string>
+
+        <!-- nickname -->
+    <string name="join_tv_nickname_title"><b>사용자 이름 만들기</b></string>
+    <string name="join_tv_nickname_subTitle">사용자 이름을 추가하거나 추천 이름을 사용하세요. 언제든지 변경할 수 있습니다.</string>
+
+        <!-- policy-->
+    <string name="join_tv_policy_title"><b>Instagram 약관 및 정책에 동의</b></string>
+    <string name="join_tv_policy_subTitle">계정을 만들려면 모든 약관에 동의해주세요.</string>
+    <string name="join_tv_policy_check1">이용 약관(필수)</string>
+    <string name="join_tv_policy_check2">개인정보처리방침(필수)</string>
+    <string name="join_tv_policy_check3">위치 기반 기능(필수)</string>
+    <string name="join_tv_policy_more">더 알아 보기</string>
+
+        <!-- profile -->
+    <string name="join_tv_profile_title"><b>프로필 사진 추가</b></string>
+    <string name="join_tv_profile_subTitle">친구들이 회원님을 알아볼 수 있도록 프로필 사진을 추가하세요. 프로필 사진은 모든 사람에게 공개됩니다.</string>
+
+
+    <!-- btm_nav -->
+    <string name="main_btm_nav_home_title">홈</string>
+    <string name="main_btm_nav_search">검색</string>
+    <string name="main_btm_nav_upload">업로드</string>
+    <string name="main_btm_nav_reels">릴스</string>
+    <string name="main_btm_nav_profile">프로필</string>
+
+    <!-- home -->
+    <string name="home_pheed_name">ngp_1997</string>
+    <string name="home_pheed_like1">님 외 </string>
+    <string name="home_pheed_like2"> 여러 명</string>
+    <string name="home_pheed_like3">이 좋아합니다.</string>
+
+    <string name="home_pheed_detail">나는 오늘도 운동을 하러 나간다.\n나는 운동을 한다. \n나는 안드로이드를 한다.\n 안드로이드는 정말 싫다.</string>
+    <string name="home_pheed_comment_count">댓글 @@@개 모두 보기 + 댓글 창 구현</string>
+
+
+    <!-- profile -->
+    <string name="profile_tv_name">이름 테스트</string>
+    <string name="profile_tv_post">게시물</string>
+    <string name="profile_tv_follower">팔로워</string>
+    <string name="profile_tv_following">팔로잉</string>
+    <string name="profile_btn_editProfile">프로필 편집</string>
+    <string name="profile_btn_shareProfile">프로필 공유</string>
+
+
+
+    <!-- upload -->
+    <string name="upload_tv_newPost">새 게시물</string>
+
+</resources>

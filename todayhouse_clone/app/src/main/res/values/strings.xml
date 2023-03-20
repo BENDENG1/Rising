@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">오늘의집</string>
+
+    <!-- Naming Rules -->
+    <!-- 도메인명_컴포넌트함축어_용도(=목적) -->
+
+    <!-- Common -->
+
+    <!-- Login -->
+    <string name="login_tv_nowRegister">지금 가입하면 <b>최대 10만원</b>\n 쿠폰 증정!</string>
+    <string name="login_btn_loginEmail"><u>이메일로 로그인</u></string>
+    <string name="login_btn_joinEmail"><u>이메일로 가입</u></string>
+    <string name="login_tv_problem">로그인에 문제가 있으신가요?</string>
+    <string name="login_tv_nonMember">비회원 주문 조회하기</string>
+        <!--Join -->
+    <string name="join_title"><b>이메일로 회원가입</b></string>
+    <string name="join_emailAuthentication"><b>이메일 인증하기</b></string>
+    <string name="join_emailNotForm">이메일 형식이 옳바르지 않습니다.</string>
+    <string name="join_passwordNotForm">비밀번호는 영문, 숫자를 포함하여 8자 이상이어야 합니다.</string>
+    <string name="join_passwordRecheck">비밀번호가 일치하지 않습니다.</string>
+    <string name="join_nicknameForm">별명을 2~15자 내로 입력해주세요.</string>
+    <string name="join_checkList">필수 항목을 동의해주세요.</string>
+    <string name="join_finish">회원가입 완료</string>
+        <!--Sign-->
+    <string name="sign_title"><b>이메일 로그인</b></string>
+    <string name="email">이메일</string>
+    <string name="password">패스워드</string>
+    <string name="doLogin">로그인하기</string>
+    <string name="resetPassword">비밀번호 재설정</string>
+    
+    <!-- Main -->
+    <string name="main_btm_nav_home_title">홈</string>
+    <string name="main_btm_nav_browse_title">둘러보기</string>
+    <string name="main_btm_nav_shopping_title">쇼핑</string>
+    <string name="main_btm_nav_repair_title">이사/시공/수리</string>
+    <string name="main_btm_nav_mypage_title">마이페이지</string>
+
+    <!-- order -->
+    <string name="order_finish_bank_account"><u>1002854626262</u></string>
+
+    <!-- Home -->
+    <string name="home_bar_edittext_search">오늘의집 통합검색</string>
+    <string name="home_text_recommend"><b>회원님을 위한 오늘의 추천</b></string>
+        <!-- recommend -->
+    <string name="home_recommend_id">근육</string>
+    <string name="home_recommend_postName">테스트용테스트용</string>
+        <!-- event -->
+    <string name="home_event_title"><b>이벤트</b></string>
+
+    <!--recommend-->
+    <string name="recommend_product"><b>상품 모아보기</b></string>
+    <string name="recommend_onlineHome">온라인 집들이</string>
+
+    <string name="recommend_title"><b>여기는 제목이 붙는곳입니다.</b> </string>
+    <string name="recommend_id">testID</string>
+    <string name="recommend_when">방금 전</string>
+
+    <!-- browse -->
+    <string name="browse_following"><b>팔로잉</b></string>
+    <string name="browse_picture"><b>사진</b></string>
+    <string name="browse_houses"><b>집들이</b></string>
+    <string name="browse_knowhow"><b>노하우</b></string>
+    <string name="browse_experthouses"><b>전문가집들이</b></string>
+    <string name="browse_qna"><b>질문과답변</b></string>
+
+    <!-- review -->
+    <string name="review_information">오늘의집에 올렸던 사진에서 고르거나 새로 업로드 해주세요.\n 상품과관련없거나 부적합한 사진을 리뷰에 등록하시눈경우,\n사전경오 없이 포인트 회수와 함께 사진이 삭제될 수 있습니다.</string>
+    <string name="review_hint">이 상품을 사용하면서 느꼈던 장점과 단점을\n솔직하게 알려주세요.</string>
+
+    <!--shopping-->
+    <string name="shopping_search">쇼핑 검색</string>
+    <string name="shopping_icon_sale">오!세일</string>
+    <string name="shopping_icon_best">BEST</string>
+    <string name="shopping_icon_todayDeal">오늘의딜</string>
+    <string name="shopping_icon_reaper">리퍼마켓</string>
+    <string name="shopping_icon_fastDelievery">빠른배송</string>
+    <string name="shopping_icon_premium">프리미엄</string>
+    <string name="shopping_icon_ohGoodds">오굿즈</string>
+    <string name="shopping_icon_foodSale">푸드특가</string>
+    <string name="shopping_icon_ohShowroom">오!쇼룸</string>
+    <string name="shopping_icon_specialExhibition">기획전</string>
+    <string name="shopping_todayRecommend"><b>오늘의 추천 상품</b></string>
+    <string name="shopping_todayDeal"><b>오늘의딜</b></string>
+    <string name="shopping_productForUser">oo님을 위한 상품</string>
+    <string name="shopping_productLately"><b>최근 본 상품</b></string>
+    <string name="shopping_productRelation"><b>내가 본 상품의 연관상품</b></string>
+    <string name="shopping_productPopular"><b>인기상품</b></string>
+    <string name="shopping_more"><b>더보기</b></string>
+    <string name="shopping_product_company">회사 이름</string>
+    <string name="shopping_product_name">상품 이름</string>
+    <string name="shopping_product_discount">25%</string>
+    <string name="shopping_product_price">상품 가격</string>
+    <string name="shopping_product_star">4.9</string>
+    <string name="shopping_product_review">리뷰 30</string>
+
+    <!-- detail -->
+    <string name="detail_bar_title">상품 이름</string>
+
+    <!-- cart -->
+    <string name="cart"><b>장바구니</b></string>
+    <string name="selectAll">모두선택</string>
+
+
+
+
+
+
+        <!-- tips -->
+    <string name="home_text_tip"><b>회원님 집에 필요한 꿀팁</b></string>
+    <string name="home_text_tip_detail">좋아하실 만한 생활 속 비법들을 모았어요</string>
+    <string name="home_text_tip_recommend_houses"><b>회원님을 위한 추천 집들이</b></string>
+
+        <!-- bottomSheet -->
+    <string name="home_bottomSheet_title">글쓰기</string>
+    <string name="home_bottomSheet_picture">사진</string>
+    <string name="home_bottomSheet_video">동영상</string>
+    <string name="home_bottomSheet_review">리뷰</string>
+    <string name="home_bottomSheet_interiorReview">인테리어 시공</string>
+    <string name="home_bottomSheet_interiorQuestion">인테리어 질문</string>
+    <string name="home_bottomSheet_picture_detail">첫 사진 올리면 1,000P</string>
+    <string name="home_bottomSheet_review_detail">포토리뷰 쓰면 250OP</string>
+    <string name="home_bottomSheet_interiorReview_detail">최대 5,000P</string>
+    <string name="home_bottomSheet_introduce">집들이,노하우 글쓰기 안내</string>
+    <!--home-->
+    <string name="home_bottom_information1">대표이사이승재 | 사업장등록번호 119–86–91245\n통신판매업신고번호 제2018-서울서초-0580호 | <b>사업자 정보확인</b>\n서울서초구 서초대로74길 4 삼성생명서초타워 27층\ncontact@bucketplace.net | 1670–0876\n\n(주)버킷플레이스는 통신판매중개자로 거래 당사자가 아니므로, 판매자가 등록한 상품정보 및 거래 등에 대해 책임을 지지않습니다. 단, (주)버킷플레이스가 판매자로 등록판매한 상품은 판매자로서 책임을 부담합니다.\n</string>
+    <string name="home_bottom_information2">이용약관  <b>개인정보처리방침</b></string>
+
+
+    <!-- MyPage -->
+    <string name="my_page_tv_counter">%1d 번 눌렀습니다.</string>
+    <string name="my_page_btn_counting_number">숫자 세기</string>
+
+</resources>

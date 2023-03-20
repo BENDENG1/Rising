@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/home_review_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvReviewNamePlace"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="이름과 위치"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvReviewMainFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음식 종류"
+            android:textColor="@color/gray"
+            android:textSize="9sp"
+            app:layout_constraintStart_toStartOf="@+id/tvReviewNamePlace"
+            app:layout_constraintTop_toBottomOf="@+id/tvReviewNamePlace" />
+
+        <TextView
+            android:id="@+id/tvReviewcommnet"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="@string/review"
+            android:textColor="#1C1C1C"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/tvReviewMainFood"
+            app:layout_constraintTop_toBottomOf="@+id/tvReviewMainFood" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvReviewcommnet"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/pic_food3" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/ivProfileTest"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvReviewcommnet"
+            app:layout_constraintTop_toBottomOf="@+id/tvReviewcommnet"
+            app:srcCompat="@drawable/ic_home_review_profile1" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="밴댕이"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivProfileTest"
+            app:layout_constraintStart_toEndOf="@+id/ivProfileTest"
+            app:layout_constraintTop_toTopOf="@+id/ivProfileTest" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

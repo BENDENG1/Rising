@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="QR코드"
+        android:id="@+id/qrCode"
+        android:icon="@drawable/ic_friends_qr" />
+
+
+    <item android:title="연락처로 추가"
+        android:id="@+id/contact"
+        android:icon="@drawable/ic_friends_contact"
+        />
+
+
+    <item android:title="ID로 추가"
+        android:id="@+id/id"
+        android:icon="@drawable/ic_friends_id"/>
+
+
+    <item android:title="추천친구"
+        android:id="@+id/recommend"
+        android:icon="@drawable/ic_friends_recommend"/>
+
+
+</menu>

@@ -1,0 +1,47 @@
+package com.softsquared.template.kotlin.src.main.home.models
+
+import com.google.gson.annotations.SerializedName
+
+data class Row(
+    val APVCANCELYMD: String,
+    val APVPERMYMD: String,
+    val ASGNCANCELYMD: String,
+    @SerializedName("BPLCNM") val hospitalName: String, //이게 병원이름
+    val CLGENDDT: String,
+    val CLGSTDT: String,
+    val DCBYMD: String,
+    val DTLSTATEGBN: String,
+    val DTLSTATENM: String,
+    val EMERCARGEN: String,
+    val EMERCARSPEC: String,
+    val FRSTASGNYMD: String,
+    val HSTRMNUM: String,
+    val LASTMODTS: String,
+    val MEDEXTRITEMSCN: String,
+    val MEDEXTRITEMSCNNM : String,
+    @SerializedName("METRORGASSRNM")val hospitalSector: String,
+    val METRPNUM: String,
+    val MGTNO: String,
+    val MITMDCASGNTYPE: String,
+    val MITMDCDEPNM: String,
+    val OPNSFTEAMCODE: String,
+    val PMTBEDNUM: String,
+    val RDNPOSTNO: String,
+    @SerializedName("RDNWHLADDR")val hospitalAddress: String,
+    val RESCNT: String,
+    val ROPNYMD: String,
+    val SICBNUM: String,
+    val SITEAREA: String,
+    val SITEPOSTNO: String,
+    val SITETEL: String,
+    val SITEWHLADDR: String,
+    val TOTAR: String,
+    val TOTEPNUM: String,
+    val TRDSTATEGBN: String,
+    @SerializedName("TRDSTATENM")val hospitalOpen: String,
+    val UPDATEDT: String,
+    val UPDATEGBN: String,
+    val UPTAENM : String,
+    val X: String,
+    val Y: String
+)

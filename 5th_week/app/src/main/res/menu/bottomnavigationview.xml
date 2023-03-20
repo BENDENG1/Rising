@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/frag_FindPlace"
+        android:title="맛집찾기"
+        android:icon="@drawable/ic_frag_findplace"
+        tools:ignore="HardcodedText"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/frag_DiscountPlace"
+        android:title="맛집할인"
+        android:icon="@drawable/ic_frag_discountplace"
+        tools:ignore="HardcodedText"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/frag_Plus"
+        android:title=""
+        android:icon="@drawable/ic_frag_plus"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/frag_News"
+        android:title="소식"
+        android:icon="@drawable/ic_frag_news"
+        tools:ignore="HardcodedText"
+        app:showAsAction="withText"/>
+
+    <item
+        android:id="@+id/frag_Profile"
+        android:title="내정보"
+        android:icon="@drawable/ic_frag_profile"
+        tools:ignore="HardcodedText"
+        app:showAsAction="withText"/>
+</menu>

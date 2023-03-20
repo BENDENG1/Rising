@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+
+    <!-- 로그인 -->
+    <dimen name="login_tv_nowRegister">25sp</dimen>
+    <dimen name="login_email_textsize">13sp</dimen>
+    <dimen name="login_tv_problem">11sp</dimen>
+    <dimen name="login_tv_nonMember">13sp</dimen>
+        <!-- 회원가입 -->
+    <dimen name="join_title">16sp</dimen>
+    <dimen name="join_checksize">11sp</dimen>
+    <dimen name="join_inputsize">15sp</dimen>
+        <!-- 로그인입력 -->
+    <dimen name="sign_title">16sp</dimen>
+    <!-- 홈프래그먼트 -->
+        <!--앱바 -->
+    <dimen name="home_bar_vertical_search_size">30dp</dimen>
+    <dimen name="home_bar_vertical_icon_size">25dp</dimen>
+    <dimen name="home_bar_horizontal_icon_size">25dp</dimen>
+    <dimen name="home_bar_vertical_margin">5dp</dimen>
+        <!--글씨크기-->
+    <dimen name="home_recyclerview_title">20sp</dimen>
+        <!--플로팅버튼(fab)크기 -->
+    <dimen name="design_fab_size_normal" tools:override="true">40dp</dimen>
+    <dimen name="design_fab_image_size" tools:override="true">20dp</dimen>
+        <!--구분선 크기 -->
+    <dimen name="home_division">5dp</dimen>
+    <!--recommend -->
+    <dimen name="home_recommend_bar_size">25dp</dimen>
+    <dimen name="home_recommend_btm_icon_size">25dp</dimen>
+    <dimen name="home_recommend_btm_text_size">12sp</dimen>
+    <dimen name="recommend_profile_size">45dp</dimen>
+
+    <!-- shopping-->
+    <dimen name="shopping_icon_text_size">12sp</dimen>
+    <dimen name="shopping_icon_size">75dp</dimen>
+    <dimen name="shopping_category_textsize">10sp</dimen>
+    <dimen name="shopping_category_iconsize">70dp</dimen>
+    <dimen name="shopping_title">18sp</dimen>
+    <dimen name="shopping_product_company">7sp</dimen>
+    <dimen name="shopping_product_name">10sp</dimen>
+    <dimen name="shopping_product_discountprice">12sp</dimen>
+    <dimen name="shopping_product_starreview">10sp</dimen>
+</resources>

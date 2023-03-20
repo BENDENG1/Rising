@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="text_headline">20sp</dimen>
+
+    <!-- myPage-->
+    <dimen name="myPage_small_title">12sp</dimen>
+    <dimen name="myPage_big_title">16sp</dimen>
+
+    <!-- search -->
+<!--    <dimen name="design_fab_size_normal" tools:override="true">35dp</dimen>-->
+<!--    <dimen name="design_fab_image_normal" tools:override="true">50dp</dimen>-->
+
+</resources>

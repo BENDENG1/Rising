@@ -1,0 +1,30 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- join -->
+    <dimen name="join_tv_title">22sp</dimen>
+    <dimen name="join_tv_subtitle">16sp</dimen>
+    <dimen name="join_edt_letter_size">16sp</dimen>
+    <dimen name="join_btn_letter_size">16sp</dimen>
+    <dimen name="join_tv_alreadyHave_size">10sp</dimen>
+
+    <!-- home -->
+    <dimen name="home_tv_name_size">14sp</dimen>
+    <dimen name="home_tv_pheed_name_size">16sp</dimen>
+    <dimen name="home_tv_pheed_detail_size">14sp</dimen>
+    
+    <!-- comment -->
+
+
+    <!-- profile -->
+    <dimen name="profile_tv_name_size">18sp</dimen>
+    <dimen name="profile_tv_count_size">18sp</dimen>
+    <dimen name="profile_tv_top_size">14sp</dimen>
+    <dimen name="profile_tv_detail_size">12sp</dimen>
+    <dimen name="profile_btn_textSize">12sp</dimen>
+    <dimen name="profile_tv_story_name">12sp</dimen>
+
+</resources>

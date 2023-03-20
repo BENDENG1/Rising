@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="home_icon_pic_list">
+        <item>@drawable/ic_home_icon_shopping</item>
+        <item>@drawable/ic_home_icon_scrapbook</item>
+        <item>@drawable/ic_home_icon_todaydeal</item>
+        <item>@drawable/ic_home_icon_dotoday</item>
+        <item>@drawable/ic_home_icon_grocery</item>
+        <item>@drawable/ic_home_icon_houses</item>
+        <item>@drawable/ic_home_icon_funnyseries</item>
+        <item>@drawable/ic_home_icon_fastdelievery</item>
+        <item>@drawable/ic_home_icon_easymove</item>
+        <item>@drawable/ic_home_icon_remodeling</item>
+    </array>
+    <string-array name="home_icon_name_list">
+        <item>쇼핑하기</item>
+        <item>스크랩북</item>
+        <item>오늘의딜</item>
+        <item>오늘뭐하지</item>
+        <item>식품관</item>
+        <item>집들이</item>
+        <item>꿀잼시리즈</item>
+        <item>빠른배송</item>
+        <item>쉬운이사</item>
+        <item>리모델링</item>
+    </string-array>
+
+    <array name="home_event_pic_list">
+        <item>@drawable/ic_home_event_1</item>
+        <item>@drawable/ic_home_event_2</item>
+        <item>@drawable/ic_home_event_3</item>
+        <item>@drawable/ic_home_event_4</item>
+    </array>
+
+    <string-array name="shopping_category_name_list">
+        <item>카테고리</item>
+        <item>가구</item>
+        <item>패브릭</item>
+        <item>가전·디지털</item>
+        <item>주방용품</item>
+        <item>식품</item>
+        <item>데코·식물</item>
+        <item>조명</item>
+        <item>수납·정리</item>
+        <item>생활용품</item>
+        <item>생필품</item>
+        <item>유아·아동</item>
+        <item>반려동물</item>
+        <item>캠핑·레저</item>
+        <item>공구·DIY</item>
+    </string-array>
+
+    <array name="shopping_category_icon_list">
+        <item>@drawable/ic_shopping_category_menu</item>
+        <item>@drawable/ic_shopping_category_furniture</item>
+        <item>@drawable/ic_shopping_category_fabric</item>
+        <item>@drawable/ic_shopping_category_digital</item>
+        <item>@drawable/ic_shopping_category_cooking</item>
+        <item>@drawable/ic_shopping_category_food</item>
+        <item>@drawable/ic_shopping_category_plant</item>
+        <item>@drawable/ic_shopping_category_light</item>
+        <item>@drawable/ic_shopping_category_storage</item>
+        <item>@drawable/ic_shopping_category_livingfurniture</item>
+        <item>@drawable/ic_shopping_category_dailynecessity</item>
+        <item>@drawable/ic_shopping_category_kids</item>
+        <item>@drawable/ic_shopping_category_pets</item>
+        <item>@drawable/ic_shopping_category_camping</item>
+        <item>@drawable/ic_shopping_category_diy</item>
+    </array>
+
+
+    <array name="purchase_icon_list">
+        <item>@drawable/ic_purchase_card</item>
+        <item>@drawable/ic_purchase_nobank</item>
+        <item>@drawable/ic_purchase_kakaopay</item>
+        <item>@drawable/ic_purchase_naverpay</item>
+        <item>@drawable/ic_purchase_payco</item>
+        <item>@drawable/ic_purchase_tosspay</item>
+        <item>@drawable/ic_purchase_cellphone</item>
+    </array>
+
+    <string-array name="purchase_title_list">
+        <item>카드</item>
+        <item>무통장입금</item>
+        <item>카카오페이</item>
+        <item>네이버페이</item>
+        <item>페이코</item>
+        <item>토스페이</item>
+        <item>핸드폰</item>
+    </string-array>
+
+    <string-array name="purchase_subTitle_list">
+        <item>할인카드 확인</item>
+        <item> </item>
+        <item>4천원 즉시할인</item>
+        <item>최대2.5%적립</item>
+        <item>최대2%적립</item>
+        <item>3000원 적립</item>
+        <item> </item>
+    </string-array>
+    
+    <string-array name="purchase_way">
+        <item>x</item>
+        <item>- 현금으로 결제한 모든 금액은 우리은행과 채무지급보증계약을 체결하여 고객님의 안전거래를 보장하고 있습니다.\n
+            - 현금 영수증발행이 필요할 경우, 결제 화면에서 정확한 발행 정보를 입력해주시기 바랍니다.</item>
+        <item>-카카오페이로 10만원 이상 결제 시 4천원 즉시할인 (기간 내 1회)\n- 1/1~17</item>
+        <item>- 네이버페이 기본적립 (네이버쇼핑 유입1% / 기타경로 0.2%) + 충전포인트결제 1.5% + 소득공제\n- 1/1~31</item>
+        <item>- 페이코 충전포인트로 결제 시 2%적립(최대 10,000p 적립)\n- 1/1~31</item>
+        <item>- 토스페이 생애 첫 결제시 3,000원 캐시백 (3,000원 이상 결제시), 1/1~31\n- 토스페이 후불결제 가능</item>
+        <item>x</item>
+    </string-array>
+</resources>

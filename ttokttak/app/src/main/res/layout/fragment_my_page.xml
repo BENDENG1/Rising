@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".src.main.myPage.MyPageFragment">
+
+
+    <ImageButton
+        android:id="@+id/ibtn_mypage_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_mypage_alarm"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn_mypage_setting"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_mypage_setting" />
+
+    <ImageButton
+        android:id="@+id/ibtn_mypage_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_mypage_setting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_mypage_Profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="근육"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibtn_mypage_alarm" />
+
+    <Button
+        android:id="@+id/btn_myPage_editName"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/home_border_gray_white_rectangle"
+        android:text="수정"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_mypage_Profile_name"
+        app:layout_constraintStart_toEndOf="@+id/tv_mypage_Profile_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_mypage_Profile_name" />
+
+    <ImageButton
+        android:id="@+id/ibtn_myPage_event"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/mypage_event_rectangle"
+        android:src="@drawable/ic_mypage_event_vote"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn_myPage_family"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mypage_Profile_name" />
+
+    <ImageButton
+        android:id="@+id/ibtn_myPage_family"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/mypage_family_rectangle"
+        android:src="@drawable/ic_mypage_manage_family"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtn_myPage_event"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn_myPage_health"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ibtn_myPage_event"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_myPage_event" />
+
+    <ImageButton
+        android:id="@+id/ibtn_myPage_health"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/mypage_health_rectangle"
+        android:src="@drawable/ic_mypage_health_pheed"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtn_myPage_family"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn_myPage_wishList"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ibtn_myPage_family"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_myPage_family" />
+
+    <ImageButton
+        android:id="@+id/ibtn_myPage_wishList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/mypage_wishlist_rectangle"
+        android:src="@drawable/ic_mypage_wishlist"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtn_myPage_health"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ibtn_myPage_health"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_myPage_health" />
+
+    <TextView
+        android:id="@+id/tv_myPage_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/myPage_event"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_myPage_event"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_myPage_event"
+        app:layout_constraintTop_toBottomOf="@+id/ibtn_myPage_event" />
+
+    <TextView
+        android:id="@+id/tv_myPage_family"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/myPage_family"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_myPage_family"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_myPage_family"
+        app:layout_constraintTop_toBottomOf="@+id/ibtn_myPage_family" />
+
+    <TextView
+        android:id="@+id/tv_myPage_health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/myPage_health"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_myPage_health"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_myPage_health"
+        app:layout_constraintTop_toBottomOf="@+id/ibtn_myPage_health" />
+
+    <TextView
+        android:id="@+id/tv_myPage_wishList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/myPage_wishList"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_myPage_wishList"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_myPage_wishList"
+        app:layout_constraintTop_toBottomOf="@+id/ibtn_myPage_wishList" />
+
+    <TextView
+        android:id="@+id/tv_myPage_claim_insurance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/myPage_claim_insurance"
+        android:textSize="@dimen/myPage_small_title"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_myPage_event"
+        app:layout_constraintTop_toBottomOf="@+id/tv_myPage_event" />
+
+    <TextView
+        android:id="@+id/tv_myPage_insurance_actualLoss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/myPage_insurance_actualLoss"
+        android:textColor="@color/black"
+        android:textSize="@dimen/myPage_big_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_myPage_claim_insurance"
+        app:layout_constraintTop_toBottomOf="@+id/tv_myPage_claim_insurance" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_myPage_insurance_actualLoss" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_myPage_management_payment" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_myPage_management_medicine" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_myPage_insurance_mobile" />
+
+    <TextView
+        android:id="@+id/tv_myPage_insurance_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/myPage_insurance_mobile"
+        android:textColor="@color/black"
+        android:textSize="@dimen/myPage_big_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_myPage_insurance_actualLoss"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/tv_myPage_myManagement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/myPage_myManagement"
+        android:textSize="@dimen/myPage_small_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_myPage_insurance_mobile"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <TextView
+        android:id="@+id/tv_myPage_management_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/myPage_management_payment"
+        android:textColor="@color/black"
+        android:textSize="@dimen/myPage_big_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_myPage_myManagement"
+        app:layout_constraintTop_toBottomOf="@+id/tv_myPage_myManagement" />
+
+    <TextView
+        android:id="@+id/tv_myPage_management_medicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/myPage_management_takeMedicine"
+        android:textColor="@color/black"
+        android:textSize="@dimen/myPage_big_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_myPage_management_payment"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/tv_myPage_customerService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/myPage_customerService"
+        app:layout_constraintStart_toStartOf="@+id/tv_myPage_management_medicine"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    <Button
+        android:id="@+id/btn_myPage_service_one"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/mypage_button_gray_rectangle"
+        android:text="@string/myPage_customerService_one"
+        app:layout_constraintEnd_toStartOf="@+id/btn_myPage_service_notification"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_myPage_customerService" />
+
+    <Button
+        android:id="@+id/btn_myPage_service_notification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/mypage_button_gray_rectangle"
+        android:text="@string/myPage_customerService_notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_myPage_service_one"
+        app:layout_constraintTop_toTopOf="@+id/btn_myPage_service_one" />
+
+    <Button
+        android:id="@+id/btn_myPage_service_terms"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/mypage_button_gray_rectangle"
+        android:text="@string/myPage_customerService_terms"
+        app:layout_constraintEnd_toStartOf="@+id/btn_myPage_service_version"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_myPage_service_one" />
+
+    <Button
+        android:id="@+id/btn_myPage_service_version"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/mypage_button_gray_rectangle"
+        android:text="@string/myPage_customerService_version"
+        android:textColor="@color/Bright_Gray_Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_myPage_service_terms"
+        app:layout_constraintTop_toTopOf="@+id/btn_myPage_service_terms" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

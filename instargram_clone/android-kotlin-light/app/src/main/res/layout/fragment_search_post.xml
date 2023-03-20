@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_search_one_profile"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_btm_nav_profile_off_click"
+        app:civ_border_color="@color/btn_story_red"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider15" />
+
+    <TextView
+        android:id="@+id/tv_search_one_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/home_pheed_name"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_search_one_profile"
+        app:layout_constraintStart_toEndOf="@+id/iv_search_one_profile"
+        app:layout_constraintTop_toTopOf="@+id/iv_search_one_profile" />
+
+    <ImageButton
+        android:id="@+id/ibtn_search_one_more"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_search_one_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_search_one_name"
+        app:srcCompat="@drawable/ic_home_more" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_search_one_picture"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_search_one_profile" />
+
+    <ImageButton
+        android:id="@+id/ibtn_search_one_like"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vp_search_one_picture"
+        app:srcCompat="@drawable/ic_home_like" />
+
+    <ImageButton
+        android:id="@+id/ibtn_search_one_comment"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtn_search_one_like"
+        app:layout_constraintStart_toEndOf="@+id/ibtn_search_one_like"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_search_one_like"
+        app:srcCompat="@drawable/ic_home_comment" />
+
+    <ImageButton
+        android:id="@+id/ibtn_search_one_message"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtn_search_one_comment"
+        app:layout_constraintStart_toEndOf="@+id/ibtn_search_one_comment"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_search_one_comment"
+        app:srcCompat="@drawable/ic_home_message" />
+
+    <ImageButton
+        android:id="@+id/ibtn_search_one_scrap"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_search_one_message"
+        app:srcCompat="@drawable/ic_home_scrap" />
+
+    <TextView
+        android:id="@+id/tv_search_one_likeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/home_pheed_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/home_tv_pheed_detail_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_search_one_like"
+        app:layout_constraintTop_toBottomOf="@+id/ibtn_search_one_like" />
+
+    <TextView
+        android:id="@+id/tv_search_one_like1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/home_pheed_like1"
+        android:textSize="@dimen/home_tv_pheed_detail_size"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_search_one_likeName"
+        app:layout_constraintStart_toEndOf="@+id/tv_search_one_likeName"
+        app:layout_constraintTop_toTopOf="@+id/tv_search_one_likeName" />
+
+    <TextView
+        android:id="@+id/tv_search_one_like2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/home_pheed_like2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/home_tv_pheed_detail_size"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_search_one_like1"
+        app:layout_constraintStart_toEndOf="@+id/tv_search_one_like1"
+        app:layout_constraintTop_toTopOf="@+id/tv_search_one_like1" />
+
+    <TextView
+        android:id="@+id/tv_search_one_like3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_pheed_like3"
+        android:textSize="@dimen/home_tv_pheed_detail_size"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_search_one_like2"
+        app:layout_constraintStart_toEndOf="@+id/tv_search_one_like2"
+        app:layout_constraintTop_toTopOf="@+id/tv_search_one_like2" />
+
+    <TextView
+        android:id="@+id/tv_search_one_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/home_pheed_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/home_tv_pheed_detail_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_search_one_likeName"
+        app:layout_constraintTop_toBottomOf="@+id/tv_search_one_likeName" />
+
+    <TextView
+        android:id="@+id/tv_search_one_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="15dp"
+        android:maxLines="1"
+        android:text="@string/home_pheed_detail"
+        android:textSize="@dimen/home_tv_pheed_detail_size"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn_search_one_scrap"
+        app:layout_constraintStart_toEndOf="@+id/tv_search_one_name2"
+        app:layout_constraintTop_toTopOf="@+id/tv_search_one_name2" />
+
+    <TextView
+        android:id="@+id/tv_search_one_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="댓글 모두 보기"
+        android:textSize="@dimen/home_tv_pheed_detail_size"
+        app:layout_constraintStart_toStartOf="@+id/tv_search_one_name2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_search_one_name2" />
+
+    <TextView
+        android:id="@+id/tv_search_one_pageCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/home_pheed_border_black_rectangle"
+        android:padding="3dp"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vp_search_one_picture" />
+
+    <TextView
+        android:id="@+id/tv_search_one_when"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="몇일전"
+        android:textSize="@dimen/home_tv_pheed_detail_size"
+        app:layout_constraintStart_toStartOf="@+id/tv_search_one_comment"
+        app:layout_constraintTop_toBottomOf="@+id/tv_search_one_comment" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_notification_back" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="2dp"
+        android:text="탐색 탭"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+
+    <View
+        android:id="@+id/divider15"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

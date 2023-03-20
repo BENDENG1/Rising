@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fcfcfc</color>
+    <color name="colorPrimaryDark">#889dfe</color>
+    <color name="colorAccent">#889dfe</color>
+
+    <!-- 기본 -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="whiteForBackground">#FFFFFF</color>
+    <color name="blackForText">#4a4a4a</color>
+    <color name="redForText">#d9534f</color>
+
+    <!-- login -->
+    <color name="btn_login_blue">#0064e0</color>
+    <color name="edt_login_gray">#9A9A9A</color>
+    <!-- join -->
+    <color name="tv_join_blue">#0054e0</color>
+    <color name="cl_join_red">#FF0000</color>
+
+    <!-- profile -->
+    <color name="cv_profile_picture_stroke">#E0E0E0</color>
+    <color name="btn_profile_gray">#D5D5D5</color>
+    <color name="btn_profile_bluesky">#38BBF6</color>
+
+    <!-- search -->
+    <color name="btn_search_gray">#E0E0E0</color>
+
+    <!-- comment -->
+    <color name="tv_comment_post_before_blueSky">#9BDAF6</color>
+    <color name="tv_comment_post_after_blueSky">#09A9F1</color>
+
+    <!-- upload -->
+    <color name="ibtn_upload_icon_gray">#555555</color>
+    <color name="upload_gray_transparent">#59DCDCDC</color>
+    <color name="upload_blue">#3783C1</color>
+
+    <!-- recommend -->
+    <color name="btn_recommend_friend_blueSky">#2095F3</color>
+    <color name="stroke_recommend_friend_gray">#AAAAAA</color>
+
+    <!-- follow -->
+    <color name="btn_follow_followers_blue">#217BC2</color>
+    <color name="btn_follow_followers_gray">#B3B3B3</color>
+
+    <!-- story -->
+    <color name="btn_story_gray">#888888</color>
+    <color name="btn_story_red">#F42C2C</color>
+    <color name="bg_story_gray">#414141</color>
+    <color name="story_progress_transparent_gray">#8CCCCCCC</color>
+    <color name="tv_story_gray">#B6B6B6</color>
+    <color name="tv_story_red">#F42C2C</color>
+
+</resources>

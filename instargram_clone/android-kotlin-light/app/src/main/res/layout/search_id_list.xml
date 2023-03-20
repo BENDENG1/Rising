@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_search_id_profile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_profile_picture"
+        app:civ_border_color="@color/btn_story_red"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_search_id_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="닉네임"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_search_id_name"
+        app:layout_constraintStart_toEndOf="@+id/civ_search_id_profile"
+        app:layout_constraintTop_toTopOf="@+id/civ_search_id_profile" />
+
+    <TextView
+        android:id="@+id/tv_search_id_name"
+        android:layout_width="27dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="3dp"
+        android:text="이름"
+        app:layout_constraintBottom_toTopOf="@+id/tv_search_id_connected"
+        app:layout_constraintStart_toStartOf="@+id/tv_search_id_nickname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_search_id_nickname" />
+
+    <TextView
+        android:id="@+id/tv_search_id_connected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="누구누구가 팔로우합니다"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/civ_search_id_profile"
+        app:layout_constraintStart_toStartOf="@+id/tv_search_id_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_search_id_name" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

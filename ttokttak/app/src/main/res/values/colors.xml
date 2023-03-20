@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fcfcfc</color>
+    <color name="colorPrimaryDark">#889dfe</color>
+    <color name="colorAccent">#889dfe</color>
+
+    <!-- 기본 -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="whiteForBackground">#FFFFFF</color>
+    <color name="blackForText">#4a4a4a</color>
+    <color name="redForText">#d9534f</color>
+
+    <!-- custom -->
+    <color name="Bright_Gray_Text">#818181</color>
+    <color name="Yellow_Button">#F8CA41</color>
+    
+    <!-- home -->
+    <color name="Home_Gray">#D5D5D5</color>
+    <color name="Home_Brighter_purple">#B9A6DD</color>
+    <color name="home_event_color_1">#C1ACEA</color>
+    <color name="home_event_color_2">#C7EF99</color>
+    <color name="home_event_color_3">#F3DC99</color>
+    <color name="Home_Picture_Text_transparent">#4D656565</color>
+    <color name="Home_Find_Hospital_kids">#E6E0A0</color>
+    <color name="Home_Find_Hospital_ears">#98C2E4</color>
+    <color name="Home_Find_Hospital_pregnant">#CBBDE3</color>
+    <color name="Home_Find_Hospital_family">#E4B2A3</color>
+    <color name="Home_Find_Hospital_inside">#E4ACA8</color>
+    <color name="Home_Find_Hospital_bone">#D8D5D5</color>
+    <color name="Home_Symptom_Gray">#EBE9E9</color>
+    <color name="Home_Kids_Reservation_Mint">#45BDB2</color>
+
+    <!-- search -->
+    <color name="search_stroke_gray">#C6C6C6</color>
+    <color name="search_border_gray">#F7F7F7</color>
+    <color name="search_tv_recommend_orange">#F85624</color>
+    <color name="search_recommendWord_gray_border">#ECECEC</color>
+    <!-- search_hospital-->
+    <color name="search_hospital_gray_text">#A8A8A8</color>
+    <color name="detail_hospital_black_transparent">#4D272727</color>
+    <color name="detail_hospital_gray_transparent">#4DAEAEAE</color>
+    <color name="detail_hospital_gray">#AEAEAE</color>
+
+    <!-- mypage -->
+    <color name="MyPage_event_vote_yellow">#F1EDCC</color>
+    <color name="MyPage_manage_family_gray">#E4E4E4</color>
+    <color name="MyPage_helath_pheed_red">#EFCECC</color>
+    <color name="MyPage_WishList_blue">#BBD7ED</color>
+    <color name="myPage_button_gray">#E6E6E6</color>
+
+</resources>

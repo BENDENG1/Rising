@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">SoftSquared Android Kotlin Template</string>
+
+    <!-- Naming Rules -->
+    <!-- 도메인명_컴포넌트함축어_용도(=목적) -->
+
+    <!-- Common -->
+
+    <!-- Main -->
+    <string name="main_btm_nav_home_title">홈</string>
+    <string name="main_btm_nav_my_page_title">마이페이지</string>
+    <string name="main_vote_title"><b>실시간 투표 진행 중</b></string>
+    <string name="main_vote_sub_title">요즘 가장 핫한 대화 주제는?</string>
+    <string name="main_popular_hospital"><b>동네 인기 병원</b></string>
+    <string name="main_open_hospital"><b>지금 문연 병원</b></string>
+    <string name="main_find_hospital"><b>진료과로 병원 찾기 🏣</b></string>
+    <string name="main_find_hospital_symptom"><b>증상에 따른 병원 찾기 🤧</b></string>
+    <string name="main_pharmacy_nearby_title"><b>내 주변 약국 찾기</b></string>
+    <string name="main_pharmacy_nearby_sub_title">지도에서 내 주변 약국을 확인해보세요.</string>
+
+    <!-- Home -->
+    <string name="home_location"><b>상계동</b></string>
+    <string name="home_search_title">질병, 진료과, 병원을 검색해보세요.</string>
+
+    <!-- home_Search -->
+    <string name="search_location">상계동</string>
+    <string name="search_department">진료과목</string>
+    <string name="search_recommend_title"><b>추천</b></string>
+    <string name="search_recommend_search"><b>검색어</b></string>
+    <string name="search_recommend_1">독감예방접종</string>
+    <string name="search_recommend_2">PCR검사</string>
+    <string name="search_recommend_3">원스톱진료기관</string>
+    <string name="search_recommend_4">감기</string>
+    <string name="search_recommend_5">이비인후과</string>
+    <string name="search_recommend_6">영유아검진</string>
+    <string name="search_recently_word"><b>최근 검색어</b></string>
+    <string name="search_hospital_reservation_can">현재 모바일접수 가능</string>
+    <string name="search_hospital_reservation_now">바로 진료 가능</string>
+        <!-- home_search_bottom_sheet-->
+    <string name="search_bottomSheet_title">진료과목</string>
+
+    <!-- detail_hospital -->
+
+
+
+
+    <!-- List(진료내역) -->
+    <string name="list_name"><b>진료내역</b></string>
+    <string name="list_find_hospital">원하는 병원을 찾아서\n 진료를 받아보세요.</string>
+    <string name="list_do_diagnosis">진료받으러 가기 ></string>
+
+    <!-- MyPage -->
+    <string name="myPage_event">이벤트·투표</string>
+    <string name="myPage_family">가족관리</string>
+    <string name="myPage_health">건강피드</string>
+    <string name="myPage_wishList">찜한 목록</string>
+    <string name="myPage_claim_insurance">보험청구</string>
+    <string name="myPage_insurance_actualLoss">실손보험 청구</string>
+    <string name="myPage_insurance_mobile">모바일 서류보관함</string>
+    <string name="myPage_myManagement">나의 관리</string>
+    <string name="myPage_management_payment">결제수단 관리</string>
+    <string name="myPage_management_takeMedicine">복약관리</string>
+    <string name="myPage_customerService">고객센터</string>
+    <string name="myPage_customerService_one">1:1 채팅 상담</string>
+    <string name="myPage_customerService_notification">공지사항</string>
+    <string name="myPage_customerService_terms">약관 보기</string>
+    <string name="myPage_customerService_version">버전 v9.7.3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

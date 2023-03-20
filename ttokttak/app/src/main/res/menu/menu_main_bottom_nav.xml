@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_main_btm_nav_home"
+        android:icon="@drawable/selector_btm_nv_home"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:checkable="true"
+        android:title="@string/main_btm_nav_home_title" />
+
+    <item
+        android:id="@+id/menu_main_btm_nav_list"
+        android:icon="@drawable/selector_btm_nv_list"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="진료내역" />
+
+    <item
+        android:id="@+id/menu_main_btm_nav_my_page"
+        android:icon="@drawable/selector_btm_nv_mypage"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="@string/main_btm_nav_my_page_title" />
+
+</menu>

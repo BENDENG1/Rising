@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/ibtn_search_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_search_back" />
+
+    <EditText
+        android:id="@+id/edt_search_hospital_symptom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="증상 또는 병원을 검색하세요."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/ibtn_search_back"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn_search_search"
+        app:layout_constraintStart_toEndOf="@+id/ibtn_search_back"
+        app:layout_constraintTop_toTopOf="@+id/ibtn_search_back" />
+
+    <ImageButton
+        android:id="@+id/ibtn_search_search"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_search_hospital_symptom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edt_search_hospital_symptom"
+        app:srcCompat="@drawable/ic_search_search" />
+
+    <Button
+        android:id="@+id/btn_search_location"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/search_bordergray_strokedarker"
+        android:drawableStart="@drawable/search_icon_location_smaller"
+        android:drawablePadding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:text="@string/search_location"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_search_back"
+        app:layout_constraintTop_toBottomOf="@+id/ibtn_search_back" />
+
+    <Button
+        android:id="@+id/btn_search_department"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/search_bordergray_strokedarker"
+        android:drawableStart="@drawable/search_icon_department_smaller"
+        android:drawablePadding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:text="@string/search_department"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_search_location"
+        app:layout_constraintStart_toEndOf="@+id/btn_search_location"
+        app:layout_constraintTop_toTopOf="@+id/btn_search_location" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_search_department" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_search_before"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider5"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/btn_search_word4"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/search_gray_rectangle"
+            android:minWidth="0dip"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/search_recommend_4"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/btn_search_word3"
+            app:layout_constraintTop_toTopOf="@+id/btn_search_word3" />
+
+        <Button
+            android:id="@+id/btn_search_word3"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/search_gray_rectangle"
+            android:minWidth="0dip"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/search_recommend_3"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/btn_search_word2"
+            app:layout_constraintTop_toTopOf="@+id/btn_search_word2" />
+
+        <TextView
+            android:id="@+id/tv_search_recommend_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/search_recommend_title"
+            android:textColor="@color/search_tv_recommend_orange"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_search_word5"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_gray_rectangle"
+            android:minWidth="0dip"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/search_recommend_5"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/btn_search_word1"
+            app:layout_constraintTop_toBottomOf="@+id/btn_search_word1" />
+
+        <Button
+            android:id="@+id/btn_search_word1"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/search_gray_rectangle"
+            android:minWidth="0dip"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/search_recommend_1"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_search_recommend_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_search_recommend_title" />
+
+        <TextView
+            android:id="@+id/tv_search_recommend_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/search_recommend_search"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_search_recommend_title"
+            app:layout_constraintStart_toEndOf="@+id/tv_search_recommend_title"
+            app:layout_constraintTop_toTopOf="@+id/tv_search_recommend_title" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_search_recently_word"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/search_recently_word"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_search_word5" />
+
+        <Button
+            android:id="@+id/btn_search_word2"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/search_gray_rectangle"
+            android:minWidth="0dip"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/search_recommend_2"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/btn_search_word1"
+            app:layout_constraintTop_toTopOf="@+id/btn_search_word1" />
+
+        <Button
+            android:id="@+id/btn_search_word_delete"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/search_recond_delete_rectangle"
+            android:text="전체삭제"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_search_recently_word" />
+
+        <Button
+            android:id="@+id/btn_search_word6"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search_gray_rectangle"
+            android:minWidth="0dip"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/search_recommend_6"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/btn_search_word5"
+            app:layout_constraintTop_toBottomOf="@+id/btn_search_word2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv_search_after"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider5">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                app:backgroundTint="#FFEB3B"
+                app:fabSize="mini"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/ic_search_map_fab" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@color/Home_Gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_search_hospital_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="총 몇개"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@android:color/transparent"
+                android:drawableEnd="@drawable/ic_home_down"
+                android:drawablePadding="5dp"
+                android:minWidth="0dip"
+                android:minHeight="0dip"
+                android:text="관련순"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_search_hospital_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

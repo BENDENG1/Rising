@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="home_event_pic_list">
+        <item>@drawable/ic_home_picture_1</item>
+        <item>@drawable/ic_home_picture_2</item>
+        <item>@drawable/ic_home_picture_3</item>
+    </array>
+
+    <array name="home_event_color_list">
+        <item>@color/home_event_color_1</item>
+        <item>@color/home_event_color_2</item>
+        <item>@color/home_event_color_3</item>
+    </array>
+
+    <array name="home_find_hospital_pic_list">
+        <item>@drawable/ic_home_hospital_kids</item>
+        <item>@drawable/ic_home_hospital_ears</item>
+        <item>@drawable/ic_home_hospital_family</item>
+        <item>@drawable/ic_home_hospital_pregnant</item>
+        <item>@drawable/ic_home_hospital_inside</item>
+        <item>@drawable/ic_home_hospital_bone</item>
+    </array>
+
+    <array name="home_find_hospital_color_list">
+        <item>@color/Home_Find_Hospital_kids</item>
+        <item>@color/Home_Find_Hospital_ears</item>
+        <item>@color/Home_Find_Hospital_family</item>
+        <item>@color/Home_Find_Hospital_pregnant</item>
+        <item>@color/Home_Find_Hospital_inside</item>
+        <item>@color/Home_Find_Hospital_bone</item>
+    </array>
+
+    <array name="home_find_hospital_name_list">
+        <item>"소아청소년과"</item>
+        <item>"이비인후과"</item>
+        <item>"가정의학과"</item>
+        <item>"산부인과"</item>
+        <item>"내과"</item>
+        <item>"정형외과"</item>
+    </array>
+
+    <array name="home_symptom_hospital_name_list">
+        <item>"PCR 검사"</item>
+        <item>"예방접종"</item>
+        <item>"감기"</item>
+        <item>"알레르기 비염"</item>
+        <item>"두드러기"</item>
+        <item>"균욱 안드로이드"</item>
+    </array>
+
+    <array name="detail_hospital_pic_list">
+        <item>@drawable/pic_detail_hospital_1</item>
+        <item>@drawable/pic_detail_hospital_2</item>
+        <item>@drawable/pic_detail_hospital_3</item>
+    </array>
+
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/leftPopular"
+        android:icon="@drawable/ic_popular"
+        android:title="인기 급상승" />
+
+    <item
+        android:id="@+id/leftShopping"
+        android:icon="@drawable/ic_shopping"
+        android:title="쇼핑" />
+
+    <item
+        android:id="@+id/leftMusic"
+        android:icon="@drawable/ic_music"
+        android:title="음악" />
+
+    <item
+        android:id="@+id/leftMovie"
+        android:icon="@drawable/ic_movie"
+        android:title="영화" />
+
+    <item
+        android:id="@+id/leftGame"
+        android:icon="@drawable/ic_game"
+        android:title="게임" />
+
+    <item
+        android:id="@+id/leftSport"
+        android:icon="@drawable/ic_sport"
+        android:title="스포츠" />
+
+    <item
+        android:id="@+id/leftLearning"
+        android:icon="@drawable/ic_learning"
+        android:title="학습" />
+
+</menu>

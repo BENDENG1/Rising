@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        app:showAsAction="ifRoom"
+        android:id="@+id/tabHome"
+        android:enabled="true"
+        android:icon="@drawable/tabhome"
+        android:title="home" />
+
+    <item
+        app:showAsAction="ifRoom"
+        android:id="@+id/tabSearch"
+        android:enabled="true"
+        android:icon="@drawable/tabsearch"
+        android:title="search" />
+
+    <item
+        app:showAsAction="ifRoom"
+        android:id="@+id/tabReels"
+        android:enabled="true"
+        android:icon="@drawable/tabreels"
+        android:title="reels" />
+
+    <item
+        app:showAsAction="ifRoom"
+        android:id="@+id/tabShop"
+        android:enabled="true"
+        android:icon="@drawable/tabshop"
+        android:title="shop" />
+
+    <item
+        app:showAsAction="ifRoom"
+        android:id="@+id/tabProfile"
+        android:enabled="true"
+        android:icon="@drawable/tabprofile"
+        android:title="profile" />
+
+
+</menu>

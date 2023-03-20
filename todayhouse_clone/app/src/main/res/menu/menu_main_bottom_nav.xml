@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_main_btm_nav_home"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/selector_bnv_home"
+        android:title="@string/main_btm_nav_home_title"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_main_btm_nav_browse"
+        android:enabled="true"
+        android:icon="@drawable/selector_bnv_browse"
+        android:title="@string/main_btm_nav_browse_title"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_main_btm_nav_shopping"
+        android:enabled="true"
+        android:icon="@drawable/selector_bnv_shopping"
+        android:title="@string/main_btm_nav_shopping_title"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_main_btm_nav_repair"
+        android:enabled="true"
+        android:icon="@drawable/selector_bnv_repair"
+        android:title="@string/main_btm_nav_repair_title"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_main_btm_nav_mypage"
+        android:enabled="true"
+        android:icon="@drawable/selector_bnv_mypage"
+        android:title="@string/main_btm_nav_mypage_title"
+        app:showAsAction="ifRoom" />
+
+</menu>
