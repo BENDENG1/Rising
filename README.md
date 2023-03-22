@@ -4,7 +4,7 @@ OT & 플랫폼 - 오리엔테이션, 플랫폼이란? 개발자로서의 자세,
 2주차<br>
 Life Cycle - 본격적인 프로그래밍을 진행하기 전, 생명주기를 이해하고 활용법을 숙지하는 단계입니다.<br>
 3주차<br>
-ListView - Listview 의 이해와 토론을 바탕으로 Adapter의 개념을 학습하며, 실습을 통한 Listview 프로그래밍을 진행합니다.<br>
+ListView - RecyclerView 의 이해와 토론을 바탕으로 Adapter의 개념을 학습하며, 실습을 통한 RecyclerView 프로그래밍을 진행합니다.<br>
 4주차<br>
 Multi-Thread - Multi-Thread 에 대한 토론 및 실습을 통해 쓰레드 프로그래밍을 학습합니다.<br>
 5주차<br>
